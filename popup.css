@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 380px;
+  background-color: #0b0c10;
+  color: #c5c6c7;
+  font-family: 'Inter', sans-serif;
+  padding: 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ambient-glow {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(102, 252, 241, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+  pointer-events: none;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #66fcf1;
+  background: rgba(102, 252, 241, 0.08);
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  border: 1px solid rgba(102, 252, 241, 0.2);
+}
+
+.title {
+  font-family: 'Cinzel', serif;
+  font-size: 19px;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: #8c8d90;
+  line-height: 1.4;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  position: relative;
+  background: rgba(31, 40, 51, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.card:hover {
+  border-color: rgba(102, 252, 241, 0.4);
+  transform: translateY(-2px);
+  background: rgba(31, 40, 51, 0.7);
+}
+
+.card.selected {
+  border-color: #66fcf1;
+  background: rgba(102, 252, 241, 0.06);
+  box-shadow: 0 0 20px rgba(102, 252, 241, 0.15);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.tier-number {
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #66fcf1;
+}
+
+.card h3 {
+  font-size: 13.5px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.card-desc {
+  font-size: 11px;
+  color: #a4a5a8;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.card-tag {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #45a29e;
+  background: rgba(69, 162, 158, 0.12);
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.card-tag.alert {
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.12);
+}
+
+.status-bar {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 10.5px;
+  color: #66fcf1;
+  letter-spacing: 0.5px;
+}

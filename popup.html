@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Your Philosophy</title>
+  <link rel="stylesheet" href="popup.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="ambient-glow"></div>
+  
+  <header>
+    <span class="badge">ATTENTION PROTOCOL</span>
+    <h1 class="title">CHOOSE YOUR PHILOSOPHY</h1>
+    <p class="subtitle">Decide how your mind negotiates with the algorithm.</p>
+  </header>
+
+  <main class="cards-container">
+    <!-- Option 1 -->
+    <div class="card" data-tier="1">
+      <div class="card-glow"></div>
+      <div class="card-header">
+        <span class="tier-number">I</span>
+        <h3>The Mindful Observer</h3>
+      </div>
+      <p class="card-desc">For gentle course-correction. An aesthetic stoic quote appears to break your autopilot gaze.</p>
+      <div class="card-tag">Speed Bump</div>
+    </div>
+
+    <!-- Option 2 -->
+    <div class="card" data-tier="2">
+      <div class="card-glow"></div>
+      <div class="card-header">
+        <span class="tier-number">II</span>
+        <h3>The Stoic Interrupter</h3>
+      </div>
+      <p class="card-desc">For the habitual scroller. Freezes the video playback and forces an intentional moment of reflection.</p>
+      <div class="card-tag">Force Pause</div>
+    </div>
+
+    <!-- Option 3 -->
+    <div class="card" data-tier="3">
+      <div class="card-glow"></div>
+      <div class="card-header">
+        <span class="tier-number">III</span>
+        <h3>The Digital Ascetic</h3>
+      </div>
+      <p class="card-desc">For deep algorithmic addiction. Instantly terminates the feed with an unbreakable 5-minute lockout.</p>
+      <div class="card-tag alert">5-Min Lockdown</div>
+    </div>
+  </main>
+
+  <footer>
+    <div id="status-bar" class="status-bar">Philosophy active: Loading...</div>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

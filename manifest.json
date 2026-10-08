@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Philosophy - Anti Doomscroll",
+  "version": "1.0.0",
+  "description": "Reclaim your attention through philosophy when opening Reels & Shorts.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "*://*.instagram.com/*",
+    "*://*.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Choose Your Philosophy"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.instagram.com/*",
+        "*://*.youtube.com/*"
+      ],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
